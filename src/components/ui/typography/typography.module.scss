@@ -1,7 +1,7 @@
-@mixin typogaphy($lineHeights, $fontSizes, $fontWeights) {
-  font-size: $fontSizes;
+@mixin typogaphy($lineHeights, $fontSize, $fontWeights) {
   font-weight: $fontWeights;
   line-height: $lineHeights;
+  font-size: $fontSize;
 }
 
 .h1 {
@@ -55,5 +55,5 @@
 }
 
 .large {
-  @include typogaphy(var(--line-height-l) var(--font-size-xxxl), var(--font-weight-bold));
+  @include typogaphy(var(--line-height-l), var(--font-size-xxxl), var(--font-weight-bold));
 }
