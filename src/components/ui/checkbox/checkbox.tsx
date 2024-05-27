@@ -20,7 +20,7 @@ export const Checkbox = ({ checked, id, label, onCheckedChange, ...restProps }: 
         onCheckedChange={onCheckedChange}
         {...restProps}
       >
-        <CheckboxRadix.Indicator className={s.checkbox}>
+        <CheckboxRadix.Indicator className={s.checkboxIndicator}>
           <Check />
         </CheckboxRadix.Indicator>
       </CheckboxRadix.Root>
