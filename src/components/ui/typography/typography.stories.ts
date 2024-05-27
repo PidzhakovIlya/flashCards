@@ -5,7 +5,6 @@ import { Typography } from './'
 const meta = {
   argTypes: {
     variant: {
-      // control: { type: 'radio' },
       options: [
         'body1',
         'body2',

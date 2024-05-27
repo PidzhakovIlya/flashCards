@@ -28,6 +28,5 @@ export function Typography<T extends ElementType>({
 }: TypographyProps<T>) {
   const Component = as ?? 'p'
 
-  // @ts-ignore
   return <Component className={`${s[variant]} ${className}`} {...restProps} />
 }
