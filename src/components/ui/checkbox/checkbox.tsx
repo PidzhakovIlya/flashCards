@@ -4,6 +4,8 @@ import { Typography } from '@/components/ui/typography'
 import * as CheckboxRadix from '@radix-ui/react-checkbox'
 // import { CheckIcon } from '@radix-ui/react-icons'
 
+import { Check } from '@/assets/checboxIcon/svgChecbox'
+
 import s from './checkbox.module.scss'
 
 type Props = {
@@ -21,7 +23,7 @@ export const Checkbox = ({ checked, id, label, onCheckedChange, ...restProps }: 
         {...restProps}
       >
         <CheckboxRadix.Indicator className={s.checkbox}>
-          {/*<CheckIcon />*/}1
+          <Check />
         </CheckboxRadix.Indicator>
       </CheckboxRadix.Root>
       <label className={'ml-2'} htmlFor={id}>
