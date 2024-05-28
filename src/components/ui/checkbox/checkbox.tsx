@@ -12,7 +12,7 @@ type Props = {
 
 export const Checkbox = ({ checked, id, label, onCheckedChange, ...restProps }: Props) => {
   return (
-    <div>
+    <div className={s.container}>
       <CheckboxRadix.Root
         checked={checked}
         className={s.CheckboxRoot}
@@ -24,19 +24,11 @@ export const Checkbox = ({ checked, id, label, onCheckedChange, ...restProps }: 
           <Check />
         </CheckboxRadix.Indicator>
       </CheckboxRadix.Root>
-      <label className={'ml-2'} htmlFor={id}>
-        {label && <Typography as={'label'} variant={'body2'} />}
-      </label>
+      {label && (
+        <Typography as={'label'} className={s.label} htmlFor={id} variant={'body2'}>
+          {label}
+        </Typography>
+      )}
     </div>
   )
 }
-// type RadixProps = {
-//   asChild: boolean
-//   checked?: 'indeterminate' | boolean
-//   defaultChecked: 'indeterminate' | boolean
-//   disabled: boolean
-//   name?: string
-//   onCheckedChange: () => void
-//   required: boolean
-//   value: string
-// }

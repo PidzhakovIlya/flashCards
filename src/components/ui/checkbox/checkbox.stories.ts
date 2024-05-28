@@ -27,6 +27,14 @@ export const CheckBoxStory: Story = {
 export const CheckBoxStory1: Story = {
   args: {
     checked: false,
+
     label: 'jjjj',
+  },
+}
+export const CheckBoxDisabled: Story = {
+  args: {
+    checked: false,
+    disabled: true,
+    label: 'HahAH',
   },
 }
